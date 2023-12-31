@@ -63,7 +63,7 @@
       xhr.send(fd)
 
       xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 &amp;&amp; xhr.status === 200) {
+        if (xhr.readyState === 4 &amp; xhr.status === 200) {
           //如果这两个成立 说明服务器响应成功
 
           var data = JSON.parse(xhr.responseText)//通过JSON.parse将字符串转变为data对象
